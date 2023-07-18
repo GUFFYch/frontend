@@ -97,24 +97,27 @@ header .advantages {
 header .advantages .advantage {
   display: flex;
   align-items: start;
+  justify-content: space-between;
   background-color: #fff;
   width: 250px;
   height: 100px;
   border-radius: 20px;
-  padding: 20px;
+  padding: 20px 15px;
   margin: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-header .advantages .advantage i {
-  position: absolute;
-  top: 10px;
-  right: 10px;
 }
 
 header .advantages .advantage p {
   width: 62%;
 }
+
+header .advantages .advantage span{
+  font-size: 20px;
+  border-radius: 100px;
+  background-color: #EFF9FF;
+  padding: 10px;
+}
+
 
 /* main sector */
 
@@ -179,7 +182,7 @@ main .value{
   margin-top: 10%;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 /* main order */
@@ -226,13 +229,35 @@ main .value .info {
   justify-content: center;
 }
 
-main .value .top-row, main .value .bottom-row {
+main .value .info .top-row, main .value .info .bottom-row {
   display: flex;
+  align-items: bottom;
   justify-content: space-between;
+  margin: 20px auto;
   width: 100%;
-  padding: 10px;
 }
 
-main .value .infoblock {
-  background-color: gray; /* Just for demonstration purposes */
+
+main .value .info .infoblock {
+  width: 50%;
 }
+
+main .value .info .infoblock p{
+  width: 75%;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+main .value .info .infoblock span {
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 100px;
+  background-color: #EFF9FF;
+}
+
+main .value .info .infoblock span:before {
+  position: relative;
+  left: -2px
+}
+
