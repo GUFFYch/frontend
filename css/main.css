@@ -7,11 +7,13 @@
     transition: 0.5s;
 }
 
+
+
 /* header section */
 header {
     width: 100%;
     height: 700px;
-    background-image: url("../images/photo_2023-07-17_13-48-12.jpg");
+    background-color: #CBECFF;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -46,29 +48,36 @@ header .languages .selected {
 /* header main part */
 header .headline {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     height: 94%;
-    width: 50%;
+    width: 100%;
+    padding-top: 10%;
     padding-left: 20%;
     color: #29374E;
+    
 }
-
-header .headline h1 span {
+header .headline .textSection{
+  display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;  
+  
+}
+header .headline .textSection h1 span {
     font-size: 64px;
     margin: 0 10px 20px 0;
     display: inline-block;
 }
 
-header .headline .bluesection {
+header .headline .textSection .bluesection {
     background-color: #fff;
     color: #0962E8;
     border-radius: 20px;
     padding: 5px 20px;
 }
 
-header .headline h2 {
+header .headline .textSection h2 {
     font-size: 22px;
     font-weight: 400;
     width: 350px;
@@ -76,7 +85,7 @@ header .headline h2 {
     display: inline-block;
 }
 
-header .headline button {
+header .headline .textSection button {
     font-size: 18px;
     color: #fff;
     background-color: #0962E8;
@@ -84,6 +93,19 @@ header .headline button {
     border-radius: 12px;
     padding: 20px 50px;
 }
+header .headline .imageSection {
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header .headline .imageSection img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 
 /* header advantages part */
 header .advantages {
@@ -178,17 +200,20 @@ main .rightCard {
 
 /* main value */
 main .value {
-    margin-top: 10%;
     padding: 10px;
     display: flex;
     justify-content: center;
+    align-items: stretch;
+    max-width: 1024px;
+    margin: 100px auto;
+
 }
 
 /* main order */
-.value .info,
+main .value .info,
 main .value .order {
-    height: 300px;
-    width: 500px;
+    flex: 1;
+    flex-basis: 0;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -206,8 +231,7 @@ main .value .order h1 {
 main .value .order p {
     font-size: 14px;
     color: #29374E;
-    width: 81%;
-    margin: 0 0 20px;
+    margin-bottom:20px;
 }
 
 main .value .order button {
@@ -233,7 +257,7 @@ main .value .info .top-row {
     align-items: bottom;
     justify-content: space-between;
     margin: 20px auto;
-    width: 100%;
+    width: 90%;
 }
 
 main .value .info .infoblock {
@@ -257,33 +281,47 @@ main .value .info .infoblock span:before {
     position: relative;
     left: -2px;
 }
-
+/* 
 @media (max-width: 980px) {
 
-  h1{
-    font-size: ;
-  }
-  p{
-    font-size: 20px;
-  }
-
     header {
-        background-position-x: 75%;
-        block-size: 100%;
-        padding: 20% 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;    
     }
-    /* Headline */
+
+    header .languages button {
+      font-size: 20px;
+    }
+
     header .headline {
-        width: 100%;
-        padding: 0;
-        justify-content: center;
-        text-align: center;
+      align-items: center;
     }
+  
+    header .headline .textSection {
+      width: 100%;
+    }
+  
+    header .headline .imageSection {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  
+    header .headline .imageSection img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      width: 150%;
+    }
+
     header .headline h1 {
         display: block;
     }
 
-    /* Advantages */
     header .advantages {
         flex-direction: column;
         align-items: center;
@@ -293,7 +331,6 @@ main .value .info .infoblock span:before {
         margin: 10px;
     }
 
-    /* Cards */
     main .cards {
         flex-direction: column;
         align-items: center;
@@ -303,8 +340,167 @@ main .value .info .infoblock span:before {
         width: 90%;
     }
 
-    /* Value */
     main .value {
         margin-top: 10%;
     }
+} */
+@media (max-width: 980px) {
+  /* Header */
+  header {
+    padding: 0 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header .languages button {
+    font-size: 25px;
+  }
+
+  header .headline {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header .headline .imageSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .headline .textSection {
+    width: 100%;
+    text-align: center;
+  }
+
+  header .headline .textSection h1 span {
+    font-size: 80px!important;
+    margin: 0 10px 20px 0;
+    display: inline-block;
+  }
+
+  header .headline .textSection h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    width:100%;
+    text-align: left;
+  }
+
+  header .headline .textSection button {
+    font-size: 45px;
+    padding: 30px;
+    width:100%;
+  }
+
+  /* Advantages */
+  header .advantages {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  header .advantages .advantage {
+    flex-direction: column-reverse;
+    width: 45%;
+    height: auto;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  header .advantages .advantage p {
+    font-size: 30px;
+  }
+
+  header .advantages .advantage span {
+    position: relative;
+    top: -30px;
+    font-size: 50px;
+  }
+
+  /* main sector */
+  main h1, 
+  main .colored,
+  main .value .order h1,
+  main .value .order span{
+    font-size: 70px;
+    width: 100%
+  }
+
+  main h2,
+  main .value .order h2 {
+    font-size: 40px!important;
+  }
+
+  main p,
+  main .value .order p{
+    font-size: 35px!important;
+  }
+  
+  /* Cards */
+  main .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .card {
+    background-position-y: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 30px;
+    width: 90%;
+    height: 600px;
+  }
+
+  /* Value */
+  main .value {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+  }
+
+  main .value .order{
+    text-align: center;
+    width: 90%;
+  }
+
+  main .value .order button{
+    width: 100%;
+    font-size: 40px;
+    padding: 40px 0;
+  }
+  
+  main .value .info .infoblock{
+    background-color: #fff;
+    height: 290px;
+    border-radius: 20px;
+    padding: 10px 40px;
+    margin: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  main .value .info .infoblock p{
+    width: 90%;
+    margin:0 auto;
+  }
+
+  main .value .info .infoblock span{
+    font-size: 60px;
+    padding:10px;
+    position: relative;
+    top: -20px;
+  }
+
+  main .value .info .infoblock span:before {
+    left: 0;
+  }
+
 }
