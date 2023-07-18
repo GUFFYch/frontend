@@ -1,263 +1,310 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  font-family: 'Inter', sans-serif;
-
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    transition: 0.5s;
 }
 
 /* header section */
-header{
-  width: 100%;
-  height: 700px;
-  background-image: url('../images/photo_2023-07-17_13-48-12.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 40px;
+header {
+    width: 100%;
+    height: 700px;
+    background-image: url("../images/photo_2023-07-17_13-48-12.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 40px;
 }
 
 /* header language buttons */
-header .languages{
-  position: absolute;
-  top: 0;
-  right: 5%;
-  padding: 10px 20px;
+header .languages {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    padding: 10px 20px;
 }
 
-header .languages button{
-  border: none;
-  background-color: transparent;
-  color: #29374E;
-  font-size: 16px;
-  cursor: pointer;
-  margin: 5px;
+header .languages button {
+    border: none;
+    background-color: transparent;
+    color: #29374E;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
 }
 
-header .languages .selected{
-  background-color: #fff;
-  color: #0962E8;
-  border-radius: 100px;
-  padding: 5px;
+header .languages .selected {
+    background-color: #fff;
+    color: #0962E8;
+    border-radius: 100px;
+    padding: 5px;
 
 }
 
 /* header main part */
 header .headline {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  height: 94%;
-  width: 50%;
-  padding-left: 20%;
-  color: #29374E;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 94%;
+    width: 50%;
+    padding-left: 20%;
+    color: #29374E;
 }
 
-header .headline h1 span{
-  font-size:  64px;
-  margin: 0 10px 20px 0;
-  display: inline-block;
+header .headline h1 span {
+    font-size: 64px;
+    margin: 0 10px 20px 0;
+    display: inline-block;
 }
 
-header .headline .bluesection{
-  background-color: #fff ;
-  color:  #0962E8;
-  border-radius: 20px;
-  padding: 5px 10px;
+header .headline .bluesection {
+    background-color: #fff;
+    color: #0962E8;
+    border-radius: 20px;
+    padding: 5px 20px;
 }
 
-header .headline h2{
-  font-size:  22px;
-  font-weight: 400;
-  width: 350px;
-  margin-bottom: 20px;
-  display: inline-block;
+header .headline h2 {
+    font-size: 22px;
+    font-weight: 400;
+    width: 350px;
+    margin-bottom: 20px;
+    display: inline-block;
 }
 
-header .headline button{
-  font-size: 18px;
-  color: #fff;
-  background-color: #0962E8;
-  border: #0962E8;
-  border-radius: 12px;
-  padding: 20px 50px;
+header .headline button {
+    font-size: 18px;
+    color: #fff;
+    background-color: #0962E8;
+    border: #0962E8;
+    border-radius: 12px;
+    padding: 20px 50px;
 }
 
 /* header advantages part */
 header .advantages {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 20px;
-  margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    margin: auto;
 }
 
 header .advantages .advantage {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  background-color: #fff;
-  width: 250px;
-  height: 100px;
-  border-radius: 20px;
-  padding: 20px 15px;
-  margin: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 250px;
+    height: 100px;
+    border-radius: 20px;
+    padding: 20px 15px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header .advantages .advantage p {
-  width: 62%;
+    width: 62%;
 }
 
-header .advantages .advantage span{
-  font-size: 20px;
-  border-radius: 100px;
-  background-color: #EFF9FF;
-  padding: 10px;
+header .advantages .advantage span {
+    font-size: 20px;
+    border-radius: 100px;
+    background-color: #EFF9FF;
+    padding: 10px;
 }
-
 
 /* main sector */
 
-main{
-  margin: 10% auto;
-  text-align: center;
+main {
+    margin: 10% auto;
+    text-align: center;
 }
 
 /* main text */
-main h1{
-  font-size: 38px;
-  font-weight: 600;
-  color: #29374E;
-  width: 50%;
-  margin: 40px auto;
+main h1 {
+    font-size: 38px;
+    font-weight: 600;
+    color: #29374E;
+    width: 50%;
+    margin: 40px auto;
 }
 
-main h1 span{
-  font-size: 38px;
-  font-weight: 600;
-  color: #0962E8;
+main h1 span {
+    font-size: 38px;
+    font-weight: 600;
+    color: #0962E8;
 }
 
 /* main cards */
 main .cards {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 main .card {
-  height: 300px;
-  width: 500px;
-  margin: 0 10px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: left;
+    height: 300px;
+    width: 500px;
+    margin: 0 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: left;
 }
 
 main .card h2 {
-  font-size: 20px;
-  margin: 40px 0 5px 20px;
-  width: 40%
+    font-size: 20px;
+    margin: 40px 0 5px 20px;
+    width: 40%;
 }
 
 main .card p {
-  font-size: 14px;
-  margin: 10px 0 5px 20px;
-  width: 40%
+    font-size: 14px;
+    margin: 10px 0 5px 20px;
+    width: 40%;
 }
 
-main .leftCard{
-  background-image: url('../images/photo_2023-07-17_13-59-25.jpg');
+main .leftCard {
+    background-image: url("../images/photo_2023-07-17_13-59-25.jpg");
 }
 
-main .rightCard{
-  background-image: url('../images/photo_2023-07-17_13-59-30.jpg');
+main .rightCard {
+    background-image: url("../images/photo_2023-07-17_13-59-30.jpg");
 }
 
 /* main value */
-main .value{
-  margin-top: 10%;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
+main .value {
+    margin-top: 10%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 /* main order */
-main .value .order, .value .info {
-  height: 300px;
-  width: 500px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: left;
+.value .info,
+main .value .order {
+    height: 300px;
+    width: 500px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: left;
 }
 
-main .value .order h1{
-  font-size: 38px;
-  font-weight: 600;
-  width: 100%;
-  color: #29374E;
-  margin: 0;
-  margin-bottom: 20px;
+main .value .order h1 {
+    font-size: 38px;
+    font-weight: 600;
+    width: 100%;
+    color: #29374E;
+    margin: 0 0 20px;
 }
 
-main .value .order p{
-  font-size: 14px;
-  color: #29374E;
-  width: 81%;
-  margin: 0;
-  margin-bottom: 20px;
+main .value .order p {
+    font-size: 14px;
+    color: #29374E;
+    width: 81%;
+    margin: 0 0 20px;
 }
 
-main .value .order button{
-  font-size: 18px;
-  color: #fff;
-  background-color: #0962E8;
-  border: #0962E8;
-  border-radius: 12px;
-  padding: 15px 25px;
+main .value .order button {
+    font-size: 18px;
+    color: #fff;
+    background-color: #0962E8;
+    border: #0962E8;
+    border-radius: 12px;
+    padding: 15px 25px;
 }
 
 /* main info */
 main .value .info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-main .value .info .top-row, main .value .info .bottom-row {
-  display: flex;
-  align-items: bottom;
-  justify-content: space-between;
-  margin: 20px auto;
-  width: 100%;
+main .value .info .bottom-row,
+main .value .info .top-row {
+    display: flex;
+    align-items: bottom;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 100%;
 }
-
 
 main .value .info .infoblock {
-  width: 50%;
+    width: 50%;
 }
 
-main .value .info .infoblock p{
-  width: 75%;
-  font-size: 14px;
-  margin: 0;
-  margin-bottom: 5px;
+main .value .info .infoblock p {
+    width: 75%;
+    font-size: 14px;
+    margin: 0 0 5px;
 }
 
 main .value .info .infoblock span {
-  font-size: 25px;
-  font-weight: 500;
-  border-radius: 100px;
-  background-color: #EFF9FF;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 100px;
+    background-color: #EFF9FF;
 }
 
 main .value .info .infoblock span:before {
-  position: relative;
-  left: -2px
+    position: relative;
+    left: -2px;
 }
 
+@media (max-width: 980px) {
+
+  h1{
+    font-size: ;
+  }
+  p{
+    font-size: 20px;
+  }
+
+    header {
+        background-position-x: 75%;
+        block-size: 100%;
+        padding: 20% 0;
+    }
+    /* Headline */
+    header .headline {
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        text-align: center;
+    }
+    header .headline h1 {
+        display: block;
+    }
+
+    /* Advantages */
+    header .advantages {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    header .advantages .advantage {
+        margin: 10px;
+    }
+
+    /* Cards */
+    main .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .card {
+        width: 90%;
+    }
+
+    /* Value */
+    main .value {
+        margin-top: 10%;
+    }
+}
