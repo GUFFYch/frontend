@@ -93,14 +93,14 @@ header .headline .textSection button {
     border-radius: 12px;
     padding: 20px 50px;
 }
-header .headline .imageSection {
+header .headline .image_section {
   width: auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-header .headline .imageSection img {
+header .headline .image_section img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
@@ -190,12 +190,12 @@ main .card p {
     width: 40%;
 }
 
-main .leftCard {
-    background-image: url("../images/photo_2023-07-17_13-59-25.jpg");
+main .left_card {
+    background-image: url("../images/strategies_phone.jpg");
 }
 
-main .rightCard {
-    background-image: url("../images/photo_2023-07-17_13-59-30.jpg");
+main .right_card {
+    background-image: url("../images/robo_advising_phone.jpg");
 }
 
 /* main value */
@@ -251,8 +251,8 @@ main .value .info {
     justify-content: center;
 }
 
-main .value .info .bottom-row,
-main .value .info .top-row {
+main .value .info .bottom_row,
+main .value .info .top_row {
     display: flex;
     align-items: bottom;
     justify-content: space-between;
@@ -304,14 +304,14 @@ main .value .info .infoblock span:before {
       width: 100%;
     }
   
-    header .headline .imageSection {
+    header .headline .image_section {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
     }
   
-    header .headline .imageSection img {
+    header .headline .image_section img {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
@@ -369,7 +369,7 @@ main .value .info .infoblock span:before {
     justify-content: center;
   }
 
-  header .headline .imageSection {
+  header .headline .image_section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -478,6 +478,10 @@ main .value .info .infoblock span:before {
     padding: 40px 0;
   }
   
+  main .value .info{
+    margin-top: 100px;
+  }
+
   main .value .info .infoblock{
     background-color: #fff;
     height: 290px;

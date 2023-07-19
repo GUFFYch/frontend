@@ -10,7 +10,7 @@
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon_"], [class*=" icon_"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -26,35 +26,35 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-graph:before {
+.icon_graph:before {
     content: "\e902";
     color: #0962e8;
 }
-.icon-admin:before {
+.icon_admin:before {
   content: "\e900";
   color: #0962e8;
 }
-.icon-integration:before {
+.icon_integration:before {
     content: "\e903";
     color: #0962e8;
 }
-.icon-settings:before {
+.icon_settings:before {
     content: "\e907";
     color: #0962e8;
 }
-.icon-clients:before {
+.icon_clients:before {
     content: "\e901";
     color: #0962e8;
 }
-.icon-money:before {
+.icon_money:before {
     content: "\e905";
     color: #0962e8;
 }
-.icon-revenue:before {
+.icon_revenue:before {
     content: "\e906";
     color: #0962e8;
 }
-.icon-loyalty:before {
+.icon_loyalty:before {
   content: "\e904";
   color: #0962e8;
 }
