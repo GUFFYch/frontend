@@ -7,7 +7,9 @@
     transition: 0.5s;
 }
 
-
+[class^="icon-"] {
+  color: #0962E8;
+}
 
 /* header section */
 header {
@@ -143,6 +145,8 @@ header .advantages .advantage span {
 /* main sector */
 
 main {
+    max-width: 1024px;
+    padding: 60px;
     margin: 10% auto;
     text-align: center;
 }
@@ -191,11 +195,11 @@ main .card p {
 }
 
 main .left_card {
-    background-image: url("../images/strategies_phone.jpg");
+    background-image: url("../images/strategies_phone_min.jpg");
 }
 
 main .right_card {
-    background-image: url("../images/robo_advising_phone.jpg");
+    background-image: url("../images/robo_advising_phone_min.jpg");
 }
 
 /* main value */
@@ -442,7 +446,7 @@ main .value .info .infoblock span:before {
 
   main p,
   main .value .order p{
-    font-size: 35px!important;
+    font-size: 30px!important;
   }
   
   /* Cards */
@@ -469,7 +473,7 @@ main .value .info .infoblock span:before {
 
   main .value .order{
     text-align: center;
-    width: 90%;
+    width: 100%;
   }
 
   main .value .order button{
@@ -486,13 +490,13 @@ main .value .info .infoblock span:before {
     background-color: #fff;
     height: 290px;
     border-radius: 20px;
-    padding: 10px 40px;
-    margin: 10px;
+    padding: 10px;
+    margin: 10px 0;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   main .value .info .infoblock p{
-    width: 90%;
+    width: 80%;
     margin:0 auto;
   }
 
